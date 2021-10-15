@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "windows.h": "c",
+        "stdio.h": "c",
+        "conio.h": "c",
+        "corecrt_stdio_config.h": "c",
+        "crtdefs.h": "c",
+        "corecrt.h": "c",
+        "_mingw.h": "c"
+    }
+}

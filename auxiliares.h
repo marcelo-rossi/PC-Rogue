@@ -1,0 +1,4 @@
+
+#define WHITESPACE 32
+#define SCREENLENGTH 92
+#define SCREENWIDTHS 30
