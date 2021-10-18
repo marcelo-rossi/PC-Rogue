@@ -1,9 +1,5 @@
-#include <windows.h>
-#include <conio.h>
 #include "auxiliares.h"
-
-void gotoxy(int x,int y);
-void hidecursor(void);
+#include "inicio.h"
 
 int inicio(void) {
     int opcao = 0;

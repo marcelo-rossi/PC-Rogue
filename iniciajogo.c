@@ -1,3 +1,5 @@
+#include "iniciajogo.h"
+
 void iniciaJogo(void)
 {
     system("cls");

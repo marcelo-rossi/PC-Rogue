@@ -1,3 +1,6 @@
+#include "carregajogo.h"
+
+
 void carregaJogo(void)
 {
     system("cls");

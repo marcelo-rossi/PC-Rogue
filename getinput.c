@@ -1,5 +1,5 @@
 #include <conio.h>
-
+#include "getinput.h"
 
 char getInput(void)
 {

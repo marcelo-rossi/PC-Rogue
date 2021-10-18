@@ -1,12 +1,11 @@
 #include <conio.h>
 #include <stdio.h>
 #include <windows.h>
-#include "inicio.c"
-#include "mainmenu.c"
-#include "auxiliares.c"
+#include "inicio.h"
+#include "mainmenu.h"
 #include "auxiliares.h"
-#include "iniciajogo.c"
-#include "carregajogo.c"
+#include "iniciajogo.h"
+#include "carregajogo.h"
 
 
 int main (void)

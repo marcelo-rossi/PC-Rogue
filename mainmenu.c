@@ -1,7 +1,6 @@
-#include <windows.h>
-#include <conio.h>
 #include "auxiliares.h"
-#include "getinput.c"
+#include "getinput.h"
+#include "mainmenu.h"
 
 void gotoxy(int x,int y);
 void opicoes(int op);
