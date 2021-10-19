@@ -1,8 +1,7 @@
 #include "auxiliares.h"
 #include "inicio.h"
 
-int inicio(void) {
-    int opcao = 0;
+void inicio(void) {
     system("cls");
 
     // imprime a barra superior

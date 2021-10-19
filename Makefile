@@ -1,5 +1,6 @@
 all: main.o auxiliares.o carregajogo.o getinput.o iniciajogo.o inicio.o mainmenu.o
-	gcc -Wall main.o auxiliares.o carregajogo.o getinput.o iniciajogo.o inicio.o mainmenu.o -o PC-Rogue.exe
+	windres icon.rc -O coff -o icon.o
+	gcc -Wall main.o auxiliares.o carregajogo.o getinput.o iniciajogo.o inicio.o mainmenu.o icon.o -o PC-Rogue.exe
 
 main.o: main.c
 	gcc -Wall -c main.c

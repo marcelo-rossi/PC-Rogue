@@ -2,4 +2,4 @@
 #include <conio.h>
 #include <stdio.h>
 
-int inicio(void);
+void inicio(void);
