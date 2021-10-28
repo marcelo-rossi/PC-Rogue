@@ -6,7 +6,7 @@ void inicio(void) {
 
     // imprime a barra superior
     printf("%c", 201);
-    for (int i = 0; i < (SCREENLENGTH); i++){
+    for (int i = 0; i < (SCREENHEIGHT); i++){
         printf("%c", 205);
     }
     printf("%c\n", 187);
@@ -15,7 +15,7 @@ void inicio(void) {
     for(int i = 0; i<(SCREENWIDTHS); i++){
         printf("%c",186);
         printf("Ajuste a janela ate arrumar o contorno da tela");
-        for (int j = 46; j < (SCREENLENGTH); j++){
+        for (int j = 46; j < (SCREENHEIGHT); j++){
             printf("%c", WHITESPACE);
         }
         printf("%c\n",186);
@@ -23,7 +23,7 @@ void inicio(void) {
 
     // imprime a barra inferior
     printf("%c", 200);
-    for (int i = 0; i < (SCREENLENGTH); i++){
+    for (int i = 0; i < (SCREENHEIGHT); i++){
         printf("%c", 205);
     }
     printf("%c", 188);
