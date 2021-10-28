@@ -16,7 +16,7 @@ int menuDisplay(void) {
 
         // imprime a barra superior
         printf("%c", 201);
-        for (int i = 0; i < (SCREENLENGTH-1); i++){
+        for (int i = 0; i < (SCREENHEIGHT-1); i++){
             printf("%c", 205);
         }
         printf("%c\n", 187);
@@ -24,7 +24,7 @@ int menuDisplay(void) {
         // imprime as barras laterais
         for(int i = 0; i<(SCREENWIDTHS-1); i++){
             printf("%c",186);
-            for (int j = 0; j < (SCREENLENGTH-1); j++){
+            for (int j = 0; j < (SCREENHEIGHT-1); j++){
                 printf("%c", WHITESPACE);
             }
         printf("%c\n",186);
@@ -32,7 +32,7 @@ int menuDisplay(void) {
 
         // imprime a barra inferior
         printf("%c", 200);
-        for (int i = 0; i < (SCREENLENGTH-1); i++){
+        for (int i = 0; i < (SCREENHEIGHT-1); i++){
             printf("%c", 205);
         }
         printf("%c", 188);
@@ -44,10 +44,10 @@ int menuDisplay(void) {
 
         switch (input)
         {
-            case 'w': //para cima
+            case UP: //para cima
                 opcao--;
                 break;
-            case 's': //para baixo
+            case DONW: //para baixo
                 opcao++;
                 break;
             default :
@@ -64,9 +64,9 @@ int menuDisplay(void) {
 
 void opicoes(int op)
 {
-    const int menu1[] = {(SCREENLENGTH >>1) - 4 , (SCREENWIDTHS >> 1) - 2 , 9};
-    const int menu2[] = {(SCREENLENGTH >>1) - 9 , (SCREENWIDTHS >> 1) , 19};
-    const int menu3[] = {(SCREENLENGTH >>1) - 2 , (SCREENWIDTHS >> 1) + 2 , 4};
+    const int menu1[] = {(SCREENHEIGHT >>1) - 4 , (SCREENWIDTHS >> 1) - 2 , 9};
+    const int menu2[] = {(SCREENHEIGHT >>1) - 9 , (SCREENWIDTHS >> 1) , 19};
+    const int menu3[] = {(SCREENHEIGHT >>1) - 2 , (SCREENWIDTHS >> 1) + 2 , 4};
     gotoxy(menu1[0],menu1[1]);
     printf("Novo Jogo");
     gotoxy(menu2[0],menu2[1]);
