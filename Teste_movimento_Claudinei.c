@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <getinput.h>
 
 
-int main()
+void movimento(void)
 {
-    char getInput(void);
     int i,j;
     int matrizSala [10][10];
     int matrizMapa [10][10];
@@ -81,18 +81,24 @@ int main()
     }
     //tentativa falha de colocar o getInput
     
-    /*input = getInput();
+    input = getInput();
     switch (input)
         {
-            case 'w': //para cima
+            case UP: //para cima
                 opcao--;
                 break;
-            case 's': //para baixo
+            case DONW: //para baixo
+                opcao++;
+                break;
+            case LEFT: //para cima
+                opcao--;
+                break;
+            case RIGHT: //para baixo
                 opcao++;
                 break;
             default :
                 break;
-        }*/
+        }
           
     //Print da matrizSala
     for(i=0;i<10;i++){
