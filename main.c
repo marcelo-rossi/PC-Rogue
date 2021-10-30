@@ -6,6 +6,12 @@
 #include "auxiliares.h"
 #include "iniciajogo.h"
 #include "carregajogo.h"
+#include "mapa.h"
+#include "heroi.h"
+
+struct salas matrizMapa [10][10];
+struct salas salaAtual;
+struct Heroi gameHero;
 
 int main (void)
 {
