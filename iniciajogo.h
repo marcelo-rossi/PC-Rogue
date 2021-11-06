@@ -8,3 +8,6 @@ void moveHeroi(void);
 void entraPorta(void);
 void sobeEscada(void);
 void desenhaUI(void);
+//void acaoInimigo(struct Slime *inimigo);
+//void acaoInimigo2(struct Slime *inimigo);
+void heroiAtaca(void);

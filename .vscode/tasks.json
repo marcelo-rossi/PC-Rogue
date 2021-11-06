@@ -1,0 +1,24 @@
+{
+    "tasks": [
+        {
+            "label": "Debug do projeto",
+            "type": "cppbuild",
+            "command": "mingw32-make.exe",
+            "args": ["all"],
+            
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Tarefa gerada pelo Depurador."
+        }
+    ],
+    "version": "2.0.0"
+}
+

@@ -5,6 +5,7 @@
 #include "getinput.h"
 #include "mapa.h"
 #include "heroi.h"
+#include "inimigo.h"
 #include "varGlobal.h"
 
 struct salas criaSala(char desenho[10][10]){
@@ -27,14 +28,13 @@ void criaMapa(void)
     // Define em qual sala está a saída
     saidaX = rand() % 10;
     saidaY = rand() % 10;
+    if (saidaX > 9){
+        saidaX = 9;
+    }
+    if (saidaY > 9){
+        saidaY = 9;
+    }
     
-//    printf("O personagem nasceu na coordenada do mapa: [%d][%d]\n",rand() % 10,rand() % 10);
-//    printf("O personagem nasceu na coordenada da sala: [%d][%d]\n",1 + (rand() % 9),1 + (rand() % 8));
-//    //tecla=getch();
-//    printf("\n");
-
-    //declaracao da matrizSala
-    //Se houver algum comando para simplificar essa parte, sera bem vindo.
     {// Cria a sala na coordenada (0,0)
     /////////////////////0  1  2  3  4  5  6  7  8  9
     char sala[10][10]= {{0, 0, 0, 0, 0, 0, 0, 0, 0, 0},///0
@@ -172,14 +172,34 @@ void criaMapa(void)
     matrizMapa[saidaY][saidaX].tiles[4][5] = 3;
     // Coloca o heroi em algum lugar do mapa
     gameHero.mapa.x = rand() % 10;
+    if (gameHero.mapa.x > 9){
+        gameHero.mapa.x = 9;
+    }
     gameHero.mapa.y = rand() % 10;
+    if (gameHero.mapa.y > 9){
+        gameHero.mapa.y = 9;
+    }
     gameHero.sala.x = rand() % 10;
+    if (gameHero.sala.x < 1){
+        gameHero.sala.x = 1;
+    }
+    if (gameHero.sala.x > 8){
+        gameHero.sala.x = 8;
+    }
     gameHero.sala.y = rand() % 10;
+    if (gameHero.sala.y < 1){
+        gameHero.sala.y = 1;
+    }
+    if (gameHero.sala.y > 8){
+        gameHero.sala.y = 8;
+    }
     gameHero.atual.x = gameHero.sala.x;
     gameHero.atual.y = gameHero.sala.y;
     salaAtual = matrizMapa[gameHero.mapa.y][gameHero.mapa.x];
     salaAtual.tiles[gameHero.sala.y][gameHero.sala.x] = 4;
-    //matrizMapa[gameHero.mapa.y][gameHero.mapa.x].tiles[gameHero.sala.y][gameHero.sala.x] = 4;
+    criaInimigos();
+
+//matrizMapa[gameHero.mapa.y][gameHero.mapa.x].tiles[gameHero.sala.y][gameHero.sala.x] = 4;
 // para depuração e visualização de todas as salas
 //    for (i = 0; i<10; i++){
 //        for (j = 0; j<10; j++){
@@ -222,35 +242,3 @@ void desenhaMapa(struct salas local)
         printf("\n");
     }
 }
-
-    
-/*    //tentativa falha de colocar o getInput
-    
-    input = getInput();
-    switch (input)
-        {
-            case UP: //para cima
-                opcao--;
-                break;
-            case DONW: //para baixo
-                opcao++;
-                break;
-            case LEFT: //para cima
-                opcao--;
-                break;
-            case RIGHT: //para baixo
-                opcao++;
-                break;
-            default :
-                break;
-        }
-          
-    //Print da matrizSala
-    for(i=0;i<10;i++){
-        for(j=0;j<10;j++)
-            printf("[%d] ",matrizSala[i][j]);
-            printf("\n");  
-    } 
-    tecla=getch(); 
-}
-*/

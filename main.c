@@ -1,33 +1,45 @@
 #include <conio.h>
 #include <stdio.h>
 #include <windows.h>
-#include "inicio.h"
 #include "mainmenu.h"
 #include "auxiliares.h"
 #include "iniciajogo.h"
+#include "inicio.h"
 #include "carregajogo.h"
 #include "mapa.h"
 #include "heroi.h"
+#include "gameover.h"
+#include "inimigo.h"
 
 struct salas matrizMapa [10][10];
 struct salas salaAtual;
 struct Heroi gameHero;
+struct Slime inimigos [10];
+struct Slime *inimigoLista;
 
 int main (void)
 {
 
+   inimigoLista = NULL;
+   inimigoLista = criaInimigosLista();
    hidecursor();
    inicio();
    getch();
-   int menuOption = menuDisplay();
-   switch (menuOption)
-   {
-      case 0: //para cima
-         iniciaJogo();
-         break;
-      case 1: //para baixo
-         carregaJogo();
-         break;
-   }
+   int menuOption = 4;
+   do {
+      menuOption = menuDisplay();
+      switch (menuOption)
+      {
+         case 0: //para cima
+            iniciaJogo();
+            if (gameHero.vivo == 0){
+               gameOver();
+            }
+            break;
+         case 1: //para baixo
+            carregaJogo();
+            break;
+      }
+   } while (menuOption != 2);
    return 0;
 }

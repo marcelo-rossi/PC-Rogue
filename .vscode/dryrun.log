@@ -1,0 +1,8 @@
+mingw32-make.exe --dry-run --keep-going --print-directory
+mingw32-make: Entering directory 'e:/PC Rogue/PC-Rogue'
+gcc -Wall -g -c inimigo_Lucas.c
+windres icon.rc -O coff -o icon.o
+gcc -Wall -g main.o auxiliares.o carregajogo.o getinput.o iniciajogo.o inicio.o mainmenu.o icon.o Mapa_Claudinei.o gameover.o graficos.o heroi.o inimigo_Lucas.o -o PC-Rogue.exe
+ 
+mingw32-make: Leaving directory 'e:/PC Rogue/PC-Rogue'
+ 

@@ -1,11 +1,14 @@
 {
     "files.associations": {
-        "windows.h": "c",
         "stdio.h": "c",
+        "iniciajogo.h": "c",
         "conio.h": "c",
-        "corecrt_stdio_config.h": "c",
-        "crtdefs.h": "c",
-        "corecrt.h": "c",
-        "_mingw.h": "c"
-    }
+        "varglobal.h": "c",
+        "inicio.h": "c",
+        "getinput.h": "c",
+        "heroi.h": "c",
+        "mapa.h": "c",
+        "inimigo.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "Disabled"
 }
