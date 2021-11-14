@@ -9,10 +9,13 @@
 
 void iniciaJogo(void)
 {
-    gameHero.level = 0;
-    gameHero.dano = 10;
-    gameHero.HP = 100;
-    gameHero.vivo = 1;
+    if (newGame == 1) {
+        gameHero.level = 0;
+        gameHero.dano = 10;
+        gameHero.HP = 100;
+        gameHero.vivo = 1;
+    }
+    mataTodos(inimigoLista);
     criaMapa();
     char input = 0;
     do
@@ -46,7 +49,7 @@ void iniciaJogo(void)
             gameHero.vivo = 0;
             input = 0;
         }
-    } while (input!=0);
+    } while (input != ESC);
 }
 
 

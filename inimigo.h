@@ -1,11 +1,4 @@
-//void criaInimigos(void);
-//void posicionaInimigo(int ini);
-//int ocupado(int mx, int my, int sx, int sy, int inimigo);
 void inimigoTurno(void);
-//void acaoInimigo(int ini);
-//void acaoInimigo2(int ini);
-
-
 void criaInimigos(void);
 struct Slime *criaInimigosLista(void);
 void insereInimigoLista(struct Slime *p);

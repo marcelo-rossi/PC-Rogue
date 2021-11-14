@@ -4,6 +4,7 @@
 #include "mapa.h"
 #include "heroi.h"
 #include "varGlobal.h"
+#include "carregajogo.h"
 
 
 void acaoHeroi(void)
@@ -114,6 +115,7 @@ void entraPorta(void){
 
 void sobeEscada(void){
     gameHero.level++;
+    salvaJogoNoArquivo();
     mataTodos(inimigoLista);
     criaMapa();    
 }

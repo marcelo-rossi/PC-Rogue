@@ -19,4 +19,6 @@ void desenhaUI(void){
     printf("Use %c %c %c %c para mover",17,30,31,16);
     gotoxy(1,14);
     printf("Use A W S D para mover");
+    gotoxy(1,15);
+    printf("Use ESC para sair do jogo");
 }

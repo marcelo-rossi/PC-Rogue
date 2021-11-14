@@ -6,7 +6,7 @@ mingw32-make.exe all --print-data-base --no-builtin-variables --no-builtin-rules
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Nov 05 21:44:50 2021
+# Make data base, printed on Sun Nov 14 09:21:55 2021
 
 # Variables
 
@@ -21,12 +21,11 @@ VBOX_MSI_INSTALL_PATH = C:\Program Files\Oracle\VirtualBox\
 # environment
 LOCALAPPDATA = C:\Users\Marcelo\AppData\Local
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-856b3557-c64c-4b71-8b38-bcda0ca8702c-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-89b5c08a-1744-44cc-bed2-6e1e26c3e6a3-sock
 # environment
 VSCODE_CWD = C:\Users\Marcelo\AppData\Local\Programs\Microsoft VS Code
 # environment
-CARBON_ 
-MEM_DISABLE = 1
+CARBON_MEM_DISABLE = 1
 # environment
 SYSTEMROOT = C:\WINDOWS
 # environment
@@ -38,7 +37,7 @@ MAKE_COMMAND := mingw32-make.exe
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_10980_QLMRKMMFUREOOMNN
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_15288_JIZDOMANPNPIZNET
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -92,7 +91,7 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 10980
+VSCODE_PID = 15288
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # automatic
@@ -100,7 +99,7 @@ VSCODE_PID = 10980
 # automatic
 <D = $(patsubst %/,%,$(patsubst %\,%,$(dir $<)))
 # environment
-VSCODE_NLS_CONFIG = {"locale":"pt-br","availableLanguages":{"*":"pt-br"},"_languagePackId":"6ea46340c3154fe0fe6192383ce27dbf.pt-br","_translationsConfigFile":"C:\\Users\\Marcelo\\AppData\\Roaming\\Code\\clp\\6ea46340c3154fe0fe6192383ce27dbf.pt-br\\tcf.json","_cacheRoot":"C:\\Users\\Marcelo\\AppData\\Roaming\\Code\\clp\\6ea46340c3154fe0fe6192383ce27dbf.pt-br","_resolvedLanguagePackCoreLocation":"C:\\Users\\Marcelo\\AppData\\Roaming\\Code\\clp\\6ea46340c3154fe0fe6192383ce27dbf.pt-br\\b3318bc0524af3d74034b8bb8a64df0ccf35549a","_corruptedFile":"C:\\Users\\Marcelo\\AppData\\Roaming\\Code\\clp\\6ea46340c3154fe0fe6192383ce27dbf.pt-br\\corrupted.info","_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"pt-br","availableLanguages":{"*":"pt-br"},"_languagePackId":"7c628789074797d26a32c85596440fb2.pt-br","_translationsConfigFile":"C:\\Users\\Marcelo\\AppData\\Roaming\\Code\\clp\\7c628789074797d26a32c85596440fb2.pt-br\\tcf.json","_cacheRoot":"C:\\Users\\Marcelo\\AppData\\Roaming\\Code\\clp\\7c628789074797d26a32c85596440fb2.pt-br","_resolvedLanguagePackCoreLocation":"C:\\Users\\Marcelo\\AppData\\Roaming\\Code\\clp\\7c628789074797d26a32c85596440fb2.pt-br\\b3318bc0524af3d74034b8bb8a64df0ccf35549a","_corruptedFile":"C:\\Users\\Marcelo\\AppData\\Roaming\\Code\\clp\\7c628789074797d26a32c85596440fb2.pt-br\\corrupted.info","_languagePackSupport":true}
 # environment
 ONEDRIVECONSUMER = C:\Users\Marcelo\OneDrive
 # default
@@ -208,7 +207,8 @@ ALLUSERSPROFILE = C:\ProgramData
 # environment
 SESSIONNAME = Console
 # default
-.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync load
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocommen 
+t grouped-target extra-prereqs archives jobserver output-sync load
 # environment
 PROCESSOR_REVISION = 2505
 # environment
@@ -222,7 +222,7 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 37 Stepping 5, GenuineIntel
 
 # Directories
 
-# . (key e:/PC Rogue/PC-Rogue, mtime 1636159448): 47 files, no impossibilities.
+# . (key e:/PC Rogue/PC-Rogue, mtime 1636892468): 47 files, no impossibilities.
 
 # 47 files, no impossibilities in 1 directories.
 
@@ -231,14 +231,6 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 37 Stepping 5, GenuineIntel
 # No implicit rules.
 
 # Files
-
-Mapa_Claudinei.o: Mapa_Claudinei.c
-#  Implicit rule search has not been done.
-#  Last modified 2021-11-05 21:43:44
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 27):
-	gcc -Wall -g -c Mapa_Claudinei.c
 
 # Not a target:
 graficos.c:
@@ -264,13 +256,13 @@ iniciajogo.c:
 # Not a target:
 carregajogo.c:
 #  Implicit rule search has been done.
-#  Last modified 2021-10-18 11:03:01
+#  Last modified 2021-11-14 09:21:00
 #  File has been updated.
 #  Successfully updated.
 
 auxiliares.o: auxiliares.c
 #  Implicit rule search has not been done.
-#  Last modified 2021-11-05 21:43:35
+#  Last modified 2021-11-05 21:45:47
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 9):
@@ -278,7 +270,7 @@ auxiliares.o: auxiliares.c
 
 getinput.o: getinput.c
 #  Implicit rule search has not been done.
-#  Last modified 2021-11-05 21:43:37
+#  Last modified 2021-11-05 21:45:50
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 15):
@@ -287,40 +279,21 @@ getinput.o: getinput.c
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2021-11-05 21:44:44
+#  Last modified 2021-11-05 21:45:29
 #  File has been updated.
 #  Successfully updated.
 
 inimigo_Lucas.o: inimigo_Lucas.c
 #  Implicit rule search has not been done.
-#  Implicit/static pattern stem: ''
-#  File does not exist.
+#  Last modified 2021-11-05 21:46:02
 #  File has been updated.
-#  Needs to be updated (-q is set).
-# automatic
-# @ := inimigo_Lucas.o
-# automatic
-# * := 
-# automatic
-# < := inimigo_Lucas.c
-# automatic
-# + := inimigo_Lucas.c
-# automatic
-# % := 
-# automatic
-# ^ := inimigo_Lucas.c
-# automatic
-# ? := inimigo_Lucas.c
-# automatic
-# | := 
-# variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=1/11=9%
+#  Successfully updated.
 #  recipe to execute (from 'Makefile', line 39):
 	gcc -Wall -g -c inimigo_Lucas.c
 
 heroi.o: heroi.c
 #  Implicit rule search has not been done.
-#  Last modified 2021-11-05 21:43:48
+#  Last modified 2021-11-05 21:46:00
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 36):
@@ -328,7 +301,7 @@ heroi.o: heroi.c
 
 iniciajogo.o: iniciajogo.c
 #  Implicit rule search has not been done.
-#  Last modified 2021-11-05 21:43:39
+#  Last modified 2021-11-05 21:45:52
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 18):
@@ -357,18 +330,11 @@ inicio.c:
 
 inicio.o: inicio.c
 #  Implicit rule search has not been done.
-#  Last modified 2021-11-05 21:43:41
+#  Last modified 2021-11-05 21:45:53
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 21):
 	gcc -Wall -g -c inicio.c
-
-# Not a target:
-Mapa_Claudinei.c:
-#  Implicit rule search has been done.
-#  Last modified 2021-11-04 16:21:16
-#  File has been updated.
-#  Successfully updated.
 
 clear:
 #  Implicit rule search has not been done.
@@ -379,7 +345,7 @@ clear:
 
 mainmenu.o: mainmenu.c
 #  Implicit rule search has not been done.
-#  Last modified 2021-11-05 21:43:43
+#  Last modified 2021-11-05 21:45:55
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 24):
@@ -391,20 +357,38 @@ mainmenu.o: mainmenu.c
 #  Modification time never checked.
 #  File has not been updated.
 
-all: main.o auxiliares.o carregajogo.o getinput.o iniciajogo.o inicio.o mainmenu.o Mapa_Claudinei.o gameover.o graficos.o heroi.o inimigo_Lucas.o
+all: main.o auxiliares.o carregajogo.o getinput.o iniciajogo.o inicio.o mainmenu.o mapa_Claudinei.o gameover.o graficos.o heroi.o inimigo_Lucas.o
 #  Command line target.
 #  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
 #  File does not exist.
 #  File has been updated.
 #  Needs to be updated (-q is set).
+# automatic
+# @ := all
+# automatic
+# * := 
+# automatic
+# < := main.o
+# automatic
+# + := main.o auxiliares.o carregajogo.o getinput.o iniciajogo.o inicio.o mainmenu.o mapa_Claudinei.o gameover.o graficos.o heroi.o inimigo_Lucas.o
+# automatic
+# % := 
+# automatic
+# ^ := main.o auxiliares.o carregajogo.o getinput.o iniciajogo.o inicio.o mainmenu.o mapa_Claudinei.o gameover.o graficos.o heroi.o inimigo_Lucas.o
+# automatic
+# ? := main.o auxiliares.o carregajogo.o getinput.o iniciajogo.o inicio.o mainmenu.o mapa_Claudinei.o gameover.o graficos.o heroi.o inimigo_Lucas.o
+# automatic
+# | := 
 # variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
+# Load=8/32=25%, Rehash=0, Collisions=1/11=9%
 #  recipe to execute (from 'Makefile', line 2):
 	windres icon.rc -O coff -o icon.o
-	gcc -Wall -g main.o auxiliares.o carregajogo.o getinput.o iniciajogo.o inicio.o mainmenu.o icon.o Mapa_Claudinei.o gameover.o graficos.o heroi.o inimigo_Lucas.o -o PC-Rogue.exe
+	gcc -Wall -g main.o auxiliares.o carregajogo.o getinput.o iniciajogo.o inicio.o mainmenu.o icon.o mapa_Claudinei.o gameover.o graficos.o heroi.o inimigo_Lucas.o -o PC-Rogue.exe
 
 # Not a target:
-main.c:
+main. 
+c:
 #  Implicit rule search has been done.
 #  Last modified 2021-11-05 21:43:18
 #  File has been updated.
@@ -426,7 +410,7 @@ mainmenu.c:
 
 main.o: main.c
 #  Implicit rule search has not been done.
-#  Last modified 2021-11-05 21:43:33
+#  Last modified 2021-11-05 21:45:45
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 6):
@@ -434,15 +418,30 @@ main.o: main.c
 
 graficos.o: graficos.c
 #  Implicit rule search has not been done.
-#  Last modified 2021-11-05 21:43:48
+#  Last modified 2021-11-05 21:46:00
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 33):
 	gcc -Wall -g -c graficos.c
 
+mapa_Claudinei.o: mapa_Claudinei.c
+#  Implicit rule search has not been done.
+#  Last modified 2021-11-05 21:45:56
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 27):
+	gcc -Wall -g -c mapa_Claudinei.c
+
+# Not a target:
+mapa_Claudinei.c:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-05 21:45:02
+#  File has been updated.
+#  Successfully updated.
+
 gameover.o: gameover.c
 #  Implicit rule search has not been done.
-#  Last modified 2021-11-05 21:43:46
+#  Last modified 2021-11-05 21:45:58
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 30):
@@ -456,7 +455,7 @@ gameover.o: gameover.c
 
 carregajogo.o: carregajogo.c
 #  Implicit rule search has not been done.
-#  Last modified 2021-11-05 21:43:37
+#  Last modified 2021-11-14 09:21:06
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 12):
@@ -477,12 +476,12 @@ gameover.c:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 52 / storage = 545 B / avg = 10 B
-# current buf: size = 8162 B / used = 545 B / count = 52 / avg = 10 B
+# strcache buffers: 1 (0) / strings = 51 / storage = 535 B / avg = 10 B
+# current buf: size = 8162 B / used = 535 B / count = 51 / avg = 10 B
 
-# strcache performance: lookups = 107 / hit rate = 51%
+# strcache performance: lookups = 107 / hit rate = 52%
 # hash-table stats:
-# Load=52/8192=1%, Rehash=0, Collisions=0/107=0%
-# Finished Make data base on Fri Nov 05 21:44:50 2021
+# Load=51/8192=1%, Rehash=0, Collisions=0/107=0%
+# Finished Make data base on Sun Nov 14 09:21:55 2021
 
  

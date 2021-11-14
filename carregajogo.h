@@ -3,3 +3,7 @@
 
 
 void carregaJogo(void);
+void mensagemNoFile(void);
+void mensagemFileEmpty(void);
+void carregaJogoDoArquivo(void);
+void salvaJogoNoArquivo(void);

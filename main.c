@@ -16,6 +16,7 @@ struct salas salaAtual;
 struct Heroi gameHero;
 struct Slime inimigos [10];
 struct Slime *inimigoLista;
+char newGame = 1;
 
 int main (void)
 {
@@ -31,6 +32,7 @@ int main (void)
       switch (menuOption)
       {
          case 0: //para cima
+            newGame = 1;
             iniciaJogo();
             if (gameHero.vivo == 0){
                gameOver();
