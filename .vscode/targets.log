@@ -5,8 +5,9 @@ mingw32-make.exe all --print-data-base --no-builtin-variables --no-builtin-rules
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
+ 
 
-# Make data base, printed on Sun Nov 14 09:21:55 2021
+# Make data base, printed on Sun Nov 14 11:05:17 2021
 
 # Variables
 
@@ -207,8 +208,7 @@ ALLUSERSPROFILE = C:\ProgramData
 # environment
 SESSIONNAME = Console
 # default
-.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocommen 
-t grouped-target extra-prereqs archives jobserver output-sync load
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync load
 # environment
 PROCESSOR_REVISION = 2505
 # environment
@@ -222,9 +222,9 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 37 Stepping 5, GenuineIntel
 
 # Directories
 
-# . (key e:/PC Rogue/PC-Rogue, mtime 1636892468): 47 files, no impossibilities.
+# . (key e:/PC Rogue/PC-Rogue, mtime 1636898707): 35 files, no impossibilities.
 
-# 47 files, no impossibilities in 1 directories.
+# 35 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -234,105 +234,92 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 37 Stepping 5, GenuineIntel
 
 # Not a target:
 graficos.c:
-#  Implicit rule search has been done.
-#  Last modified 2021-11-04 11:06:20
-#  File has been updated.
-#  Successfully updated.
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # Not a target:
 auxiliares.c:
-#  Implicit rule search has been done.
-#  Last modified 2021-10-18 10:50:33
-#  File has been updated.
-#  Successfully updated.
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # Not a target:
 iniciajogo.c:
-#  Implicit rule search has been done.
-#  Last modified 2021-11-04 17:11:08
-#  File has been updated.
-#  Successfully updated.
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # Not a target:
-carregajogo.c:
-#  Implicit rule search has been done.
-#  Last modified 2021-11-14 09:21:00
-#  File has been updated.
-#  Successfully updated.
+carregajogo_Eliani.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 auxiliares.o: auxiliares.c
 #  Implicit rule search has not been done.
-#  Last modified 2021-11-05 21:45:47
-#  File has been updated.
-#  Successfully updated.
+#  Modification time never checked.
+#  File has not been updated.
 #  recipe to execute (from 'Makefile', line 9):
 	gcc -Wall -g -c auxiliares.c
 
 getinput.o: getinput.c
 #  Implicit rule search has not been done.
-#  Last modified 2021-11-05 21:45:50
-#  File has been updated.
-#  Successfully updated.
+#  Modification time never checked.
+#  File has not been updated.
 #  recipe to execute (from 'Makefile', line 15):
 	gcc -Wall -g -c getinput.c
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2021-11-05 21:45:29
+#  Last modified 2021-11-14 11:03:54
 #  File has been updated.
 #  Successfully updated.
 
 inimigo_Lucas.o: inimigo_Lucas.c
 #  Implicit rule search has not been done.
-#  Last modified 2021-11-05 21:46:02
-#  File has been updated.
-#  Successfully updated.
+#  Modification time never checked.
+#  File has not been updated.
 #  recipe to execute (from 'Makefile', line 39):
 	gcc -Wall -g -c inimigo_Lucas.c
 
 heroi.o: heroi.c
 #  Implicit rule search has not been done.
-#  Last modified 2021-11-05 21:46:00
-#  File has been updated.
-#  Successfully updated.
+#  Modification time never checked.
+#  File has not been updated.
 #  recipe to execute (from 'Makefile', line 36):
 	gcc -Wall -g -c heroi.c
 
 iniciajogo.o: iniciajogo.c
 #  Implicit rule search has not been done.
-#  Last modified 2021-11-05 21:45:52
-#  File has been updated.
-#  Successfully updated.
+#  Modification time never checked.
+#  File has not been updated.
 #  recipe to execute (from 'Makefile', line 18):
 	gcc -Wall -g -c iniciajogo.c
 
 # Not a target:
 heroi.c:
-#  Implicit rule search has been done.
-#  Last modified 2021-11-05 21:01:17
-#  File has been updated.
-#  Successfully updated.
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # Not a target:
 getinput.c:
-#  Implicit rule search has been done.
-#  Last modified 2021-10-18 10:52:48
-#  File has been updated.
-#  Successfully updated.
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # Not a target:
 inicio.c:
-#  Implicit rule search has been done.
-#  Last modified 2021-11-05 21:41:37
-#  File has been updated.
-#  Successfully updated.
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 inicio.o: inicio.c
 #  Implicit rule search has not been done.
-#  Last modified 2021-11-05 21:45:53
-#  File has been updated.
-#  Successfully updated.
+#  Modification time never checked.
+#  File has not been updated.
 #  recipe to execute (from 'Makefile', line 21):
 	gcc -Wall -g -c inicio.c
 
@@ -341,13 +328,12 @@ clear:
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 42):
-	rm -f PC-Rogue.exe main.o auxiliares.o carregajogo.o getinput.o iniciajogo.o inicio.o mainmenu.o
+	rm -f PC-Rogue.exe main.o auxiliares.o carregajogo_Eliani.o getinput.o iniciajogo.o inicio.o mainmenu.o
 
 mainmenu.o: mainmenu.c
 #  Implicit rule search has not been done.
-#  Last modified 2021-11-05 21:45:55
-#  File has been updated.
-#  Successfully updated.
+#  Modification time never checked.
+#  File has not been updated.
 #  recipe to execute (from 'Makefile', line 24):
 	gcc -Wall -g -c mainmenu.c
 
@@ -357,93 +343,94 @@ mainmenu.o: mainmenu.c
 #  Modification time never checked.
 #  File has not been updated.
 
-all: main.o auxiliares.o carregajogo.o getinput.o iniciajogo.o inicio.o mainmenu.o mapa_Claudinei.o gameover.o graficos.o heroi.o inimigo_Lucas.o
+all: main.o auxiliares.o carregajogo_Eliani.o getinput.o iniciajogo.o inicio.o mainmenu.o mapa_Claudinei.o gameover.o graficos.o heroi.o inimigo_Lucas.o
 #  Command line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
+#  recipe to execute (from 'Makefile', line 2):
+	windres icon.rc -O coff -o icon.o
+	gcc -Wall -g main.o auxiliares.o carregajogo_Eliani.o getinput.o iniciajogo.o inicio.o mainmenu.o icon.o mapa_Claudinei.o gameover.o graficos.o heroi.o inimigo_Lucas.o -o PC-Rogue.exe
+
+# Not a target:
+main.c:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-14 10:24:29
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+inimigo_Lucas.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+mainmenu.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+carregajogo_Eliani.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+main.o: main.c
 #  Implicit rule search has not been done.
 #  Implicit/static pattern stem: ''
 #  File does not exist.
 #  File has been updated.
 #  Needs to be updated (-q is set).
 # automatic
-# @ := all
+# @ := main.o
 # automatic
 # * := 
 # automatic
-# < := main.o
+# < := main.c
 # automatic
-# + := main.o auxiliares.o carregajogo.o getinput.o iniciajogo.o inicio.o mainmenu.o mapa_Claudinei.o gameover.o graficos.o heroi.o inimigo_Lucas.o
+# + := main.c
 # automatic
 # % := 
 # automatic
-# ^ := main.o auxiliares.o carregajogo.o getinput.o iniciajogo.o inicio.o mainmenu.o mapa_Claudinei.o gameover.o graficos.o heroi.o inimigo_Lucas.o
+# ^ := main.c
 # automatic
-# ? := main.o auxiliares.o carregajogo.o getinput.o iniciajogo.o inicio.o mainmenu.o mapa_Claudinei.o gameover.o graficos.o heroi.o inimigo_Lucas.o
+# ? := main.c
 # automatic
 # | := 
 # variable set hash-table stats:
 # Load=8/32=25%, Rehash=0, Collisions=1/11=9%
-#  recipe to execute (from 'Makefile', line 2):
-	windres icon.rc -O coff -o icon.o
-	gcc -Wall -g main.o auxiliares.o carregajogo.o getinput.o iniciajogo.o inicio.o mainmenu.o icon.o mapa_Claudinei.o gameover.o graficos.o heroi.o inimigo_Lucas.o -o PC-Rogue.exe
-
-# Not a target:
-main. 
-c:
-#  Implicit rule search has been done.
-#  Last modified 2021-11-05 21:43:18
-#  File has been updated.
-#  Successfully updated.
-
-# Not a target:
-inimigo_Lucas.c:
-#  Implicit rule search has been done.
-#  Last modified 2021-11-05 21:44:08
-#  File has been updated.
-#  Successfully updated.
-
-# Not a target:
-mainmenu.c:
-#  Implicit rule search has been done.
-#  Last modified 2021-10-28 09:40:15
-#  File has been updated.
-#  Successfully updated.
-
-main.o: main.c
-#  Implicit rule search has not been done.
-#  Last modified 2021-11-05 21:45:45
-#  File has been updated.
-#  Successfully updated.
 #  recipe to execute (from 'Makefile', line 6):
 	gcc -Wall -g -c main.c
 
 graficos.o: graficos.c
 #  Implicit rule search has not been done.
-#  Last modified 2021-11-05 21:46:00
-#  File has been updated.
-#  Successfully updated.
+#  Modification time never checked.
+#  File has not been updated.
 #  recipe to execute (from 'Makefile', line 33):
 	gcc -Wall -g -c graficos.c
 
 mapa_Claudinei.o: mapa_Claudinei.c
 #  Implicit rule search has not been done.
-#  Last modified 2021-11-05 21:45:56
-#  File has been updated.
-#  Successfully updated.
+#  Modification time never checked.
+#  File has not been updated.
 #  recipe to execute (from 'Makefile', line 27):
 	gcc -Wall -g -c mapa_Claudinei.c
 
 # Not a target:
 mapa_Claudinei.c:
-#  Implicit rule search has been done.
-#  Last modified 2021-11-05 21:45:02
-#  File has been updated.
-#  Successfully updated.
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 gameover.o: gameover.c
 #  Implicit rule search has not been done.
-#  Last modified 2021-11-05 21:45:58
-#  File has been updated.
-#  Successfully updated.
+#  Modification time never checked.
+#  File has not been updated.
 #  recipe to execute (from 'Makefile', line 30):
 	gcc -Wall -g -c gameover.c
 
@@ -453,35 +440,34 @@ gameover.o: gameover.c
 #  Modification time never checked.
 #  File has not been updated.
 
-carregajogo.o: carregajogo.c
+carregajogo.o: carregajogo_Eliani.c
 #  Implicit rule search has not been done.
-#  Last modified 2021-11-14 09:21:06
-#  File has been updated.
-#  Successfully updated.
+#  Modification time never checked.
+#  File has not been updated.
 #  recipe to execute (from 'Makefile', line 12):
-	gcc -Wall -g -c carregajogo.c
+	gcc -Wall -g -c carregajogo_Eliani.c
 
 # Not a target:
 gameover.c:
-#  Implicit rule search has been done.
-#  Last modified 2021-11-04 09:29:59
-#  File has been updated.
-#  Successfully updated.
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # files hash-table stats:
-# Load=29/1024=3%, Rehash=0, Collisions=0/77=0%
+# Load= 
+30/1024=3%, Rehash=0, Collisions=0/77=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 51 / storage = 535 B / avg = 10 B
-# current buf: size = 8162 B / used = 535 B / count = 51 / avg = 10 B
+# strcache buffers: 1 (0) / strings = 52 / storage = 569 B / avg = 10 B
+# current buf: size = 8162 B / used = 569 B / count = 52 / avg = 10 B
 
-# strcache performance: lookups = 107 / hit rate = 52%
+# strcache performance: lookups = 95 / hit rate = 45%
 # hash-table stats:
-# Load=51/8192=1%, Rehash=0, Collisions=0/107=0%
-# Finished Make data base on Sun Nov 14 09:21:55 2021
+# Load=52/8192=1%, Rehash=0, Collisions=0/95=0%
+# Finished Make data base on Sun Nov 14 11:05:17 2021
 
  

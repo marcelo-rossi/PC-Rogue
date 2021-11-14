@@ -1,6 +1,6 @@
-all: main.o auxiliares.o carregajogo.o getinput.o iniciajogo.o inicio.o mainmenu.o mapa_Claudinei.o gameover.o graficos.o heroi.o inimigo_Lucas.o
+all: main.o auxiliares.o carregajogo_Eliani.o getinput.o iniciajogo.o inicio.o mainmenu.o mapa_Claudinei.o gameover.o graficos.o heroi.o inimigo_Lucas.o
 	windres icon.rc -O coff -o icon.o
-	gcc -Wall -g main.o auxiliares.o carregajogo.o getinput.o iniciajogo.o inicio.o mainmenu.o icon.o mapa_Claudinei.o gameover.o graficos.o heroi.o inimigo_Lucas.o -o PC-Rogue.exe
+	gcc -Wall -g main.o auxiliares.o carregajogo_Eliani.o getinput.o iniciajogo.o inicio.o mainmenu.o icon.o mapa_Claudinei.o gameover.o graficos.o heroi.o inimigo_Lucas.o -o PC-Rogue.exe
 
 main.o: main.c
 	gcc -Wall -g -c main.c
@@ -8,8 +8,8 @@ main.o: main.c
 auxiliares.o: auxiliares.c
 	gcc -Wall -g -c auxiliares.c
 
-carregajogo.o: carregajogo.c
-	gcc -Wall -g -c carregajogo.c
+carregajogo.o: carregajogo_Eliani.c
+	gcc -Wall -g -c carregajogo_Eliani.c
 
 getinput.o: getinput.c
 	gcc -Wall -g -c getinput.c
@@ -39,4 +39,4 @@ inimigo_Lucas.o: inimigo_Lucas.c
 	gcc -Wall -g -c inimigo_Lucas.c
 
 clear:
-	rm -f PC-Rogue.exe main.o auxiliares.o carregajogo.o getinput.o iniciajogo.o inicio.o mainmenu.o
+	rm -f PC-Rogue.exe main.o auxiliares.o carregajogo_Eliani.o getinput.o iniciajogo.o inicio.o mainmenu.o
